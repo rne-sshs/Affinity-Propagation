@@ -51,10 +51,16 @@ xn yn
 
  - - -
 
-### Results (visualized with matplotlib)
+## Results (visualized with matplotlib)
 ![ap_test6](https://user-images.githubusercontent.com/89206053/170421893-2c4a8747-5aec-4850-a9ff-caab929c888d.png)
 
 ![ap_test5](https://user-images.githubusercontent.com/89206053/170421632-f709bcc7-3aa3-4d2c-ba5b-fe9166cffd93.png)
 
 ![ap_test4](https://user-images.githubusercontent.com/89206053/170420856-b8dab248-9d7c-4ac3-8356-f416f82c19c0.png)
 
+- - -
+### 3D Results  
+![ap_3d_test1](https://user-images.githubusercontent.com/89206053/170478790-81ce0a07-73b3-4fac-9d15-d08cc15be26d.png)  
+
+
+![ap_3d_test2](https://user-images.githubusercontent.com/89206053/170478445-b28facf7-7780-4fa6-9768-419370620f03.png)
