@@ -34,12 +34,14 @@ Affinity-Propagation
 
 >input 데이터 형식: 
 
->   >   n  
+```    
+n  
 x1 y1  
 x2 y2  
 x3 y3  
 ...  
 xn yn
+```
 
 
 #### [AffinityPropagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py)를 같은 디렉토리에서 실행하면 "filename_output.txt" 가 생긴다.  
