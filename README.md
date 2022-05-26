@@ -29,7 +29,7 @@ Affinity-Propagation
 
 ### How to use
 #### 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다.  
->랜덤 데이터: [Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py) 를 n, filename, maxcoor 를 정하고 실행하면 해당 디렉토리에 "{filename}.txt" 의 이름으로 랜덤 테이터가 생긴다.
+>랜덤 데이터: [Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py) 를 n, filename, maxcoor, is_3d 를 정하고 실행하면 해당 디렉토리에 "{filename}.txt" 의 이름으로 랜덤 테이터가 생긴다.
 
 
 >input 데이터 형식: 
