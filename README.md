@@ -1,22 +1,31 @@
 Affinity-Propagation
 ========
 2022 SSHS R&E 
-(김선웅, 이지후, 박세진, 정현우)
+
+* 김선웅(seonu)
+* 이지후(numbering)
+* 박세진(exabyte)
+* 정현우(andy)
+
 
 내용
 --------
 
 ### Affinity Propagation
-> __Clustering by Passing Messages Between Data Points__
+> __Clustering by Passing Messages Between Data Points__  
   Brendan J. Frey and Delbert Dueck (January 11, 2007)
  _Science_ __315__ (5814), 972-976. [doi: 10.1126/science.1136800]
 
-> __Beyond Affinity Propagagion: Message Passing Algorithms for Clustering__
+> __Beyond Affinity Propagagion: Message Passing Algorithms for Clustering__  
+  Givoni, I. Ella (August 21, 2012)
+  https://hdl.handle.net/1807/32721
 
-위 논문을 참고하여 AP의 구현체 코드 작성 (c, python, javascript)
 
-### Generator
-AP를 테스트하기 위한 테스트케이스 생성 (python)
+위 논문들을 참고하여 AP의 구현체 코드 작성 (C++, Python, JavaScript)
+
+- - -
+
+
 
 ### How to use
 #### 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다.  
