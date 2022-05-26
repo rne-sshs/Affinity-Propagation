@@ -8,13 +8,26 @@ Affinity-Propagation
 
 ### Affinity Propagation
 > __Clustering by Passing Messages Between Data Points__
- Brendan J. Frey and Delbert Dueck (January 11, 2007)
+  Brendan J. Frey and Delbert Dueck (January 11, 2007)
  _Science_ __315__ (5814), 972-976. [doi: 10.1126/science.1136800]
+
+> __Beyond Affinity Propagagion: Message Passing Algorithms for Clustering__
 
 위 논문을 참고하여 AP의 구현체 코드 작성 (c, python, javascript)
 
 ### Generator
 AP를 테스트하기 위한 테스트케이스 생성 (python)
 
+### How to use
+[Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py)  
+n, filename, maxcoor 를 정하고 실행하면 해당 디렉토리에 "filename.txt" 가 생긴다.  
+[AffinityPropagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py)
+
+
 ### Result (visualized with matplotlib)
-![KakaoTalk_20220526_110228063](https://user-images.githubusercontent.com/76426516/170400844-19a2acc8-5b86-4d12-ab06-08ae5034eca4.jpg)
+![ap_test6](https://user-images.githubusercontent.com/89206053/170421893-2c4a8747-5aec-4850-a9ff-caab929c888d.png)
+
+![ap_test5](https://user-images.githubusercontent.com/89206053/170421632-f709bcc7-3aa3-4d2c-ba5b-fe9166cffd93.png)
+
+![ap_test4](https://user-images.githubusercontent.com/89206053/170420856-b8dab248-9d7c-4ac3-8356-f416f82c19c0.png)
+
