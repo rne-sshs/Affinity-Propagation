@@ -19,9 +19,24 @@ Affinity-Propagation
 AP를 테스트하기 위한 테스트케이스 생성 (python)
 
 ### How to use
-[Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py)  
-n, filename, maxcoor 를 정하고 실행하면 해당 디렉토리에 "filename.txt" 가 생긴다.  
-[AffinityPropagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py)
+#### 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다.  
+>랜덤 데이터: [Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py)를 n, filename, maxcoor 를 정하고 실행하면 해당 디렉토리에 "filename.txt" 의 이름으로 랜덤 테이터가 생긴다.
+
+
+>input 데이터 형식: 
+
+>   >   n  
+x1 y1  
+x2 y2  
+x3 y3  
+...  
+xn yn
+
+
+#### [AffinityPropagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py)를 같은 디렉토리에서 실행하면 "filename_output.txt" 가 생긴다.  
+
+
+#### [Visualization code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation_andy.py)를 같은 디렉토리에서 실행하면 "filename.png" 가 생긴다.
 
 
 ### Result (visualized with matplotlib)
