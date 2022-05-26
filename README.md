@@ -39,7 +39,7 @@ xn yn
 #### [Visualization code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation_andy.py)를 같은 디렉토리에서 실행하면 "filename.png" 가 생긴다.
 
 
-### Result (visualized with matplotlib)
+### Results (visualized with matplotlib)
 ![ap_test6](https://user-images.githubusercontent.com/89206053/170421893-2c4a8747-5aec-4850-a9ff-caab929c888d.png)
 
 ![ap_test5](https://user-images.githubusercontent.com/89206053/170421632-f709bcc7-3aa3-4d2c-ba5b-fe9166cffd93.png)
