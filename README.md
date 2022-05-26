@@ -16,5 +16,5 @@ Affinity-Propagation
 ### Generator
 AP를 테스트하기 위한 테스트케이스 생성 (python)
 
-### Result (visualized with python)
+### Result (visualized with matplotlib)
 ![KakaoTalk_20220526_110228063](https://user-images.githubusercontent.com/76426516/170400844-19a2acc8-5b86-4d12-ab06-08ae5034eca4.jpg)
