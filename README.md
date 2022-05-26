@@ -14,11 +14,11 @@ Affinity-Propagation
 ### Affinity Propagation
 > __Clustering by Passing Messages Between Data Points__  
   Brendan J. Frey and Delbert Dueck (January 11, 2007)
- _Science_ __315__ (5814), 972-976. [doi: 10.1126/science.1136800]
+ _Science_ __315__ (5814), 972-976. [doi: 10.1126/science.1136800] [Link](http://utstat.toronto.edu/reid/sta414/frey-affinity.pdf)
 
 > __Beyond Affinity Propagagion: Message Passing Algorithms for Clustering__  
   Givoni, I. Ella (August 21, 2012)
-  https://hdl.handle.net/1807/32721
+  [Link](https://hdl.handle.net/1807/32721)
 
 
 위 논문들을 참고하여 AP의 구현체 코드 작성 (C++, Python, JavaScript)
@@ -29,7 +29,7 @@ Affinity-Propagation
 
 ### How to use
 #### 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다.  
->랜덤 데이터: [Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py)를 n, filename, maxcoor 를 정하고 실행하면 해당 디렉토리에 "filename.txt" 의 이름으로 랜덤 테이터가 생긴다.
+>랜덤 데이터: [Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py) 를 n, filename, maxcoor 를 정하고 실행하면 해당 디렉토리에 "{filename}.txt" 의 이름으로 랜덤 테이터가 생긴다.
 
 
 >input 데이터 형식: 
@@ -44,10 +44,10 @@ xn yn
 ```
 
 
-#### [AffinityPropagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py)를 같은 디렉토리에서 실행하면 "filename_output.txt" 가 생긴다.  
+#### [Affinity Propagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}_output.txt" 가 생긴다.  
 
 
-#### [Visualization code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation_andy.py)를 같은 디렉토리에서 실행하면 "filename.png" 가 생긴다.
+#### [Visualization code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}.png" 가 생긴다.
 
  - - -
 
