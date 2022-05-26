@@ -5,7 +5,7 @@ def randcolor():
     return "#"+''.join([random.choice('ABCDEF0123456789') for i in range(6)])
 
 #region input
-input_filename = "test1"
+input_filename = "ap_test6"
 coordinates = open(input_filename + ".txt",'r')
 coor = []
 lines = coordinates.readlines()
@@ -31,4 +31,11 @@ for i in range(n):
         plt.plot([coor[i][0]],[coor[i][1]],color = colordict[exemplars[i]], marker = 'o')
         plt.plot([coor[i][0],coor[exemplars[i]][0]],[coor[i][1],coor[exemplars[i]][1]],color = 'black')
 
+
+plt.title('Clustering Points by Affinity Propagation ('+r'$n=$'+str(n)+')', size = 14)
+plt.xlabel('x')
+plt.ylabel('y')
+
+
+plt.savefig(input_filename+".png",dpi = 600)
 plt.show()
