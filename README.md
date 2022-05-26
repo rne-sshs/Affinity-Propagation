@@ -28,12 +28,12 @@ Affinity-Propagation
 
 
 ### How to use
-#### 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다.  
+#### 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다. (2차원 혹은 3차원) 
 >랜덤 데이터: [Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py) 를 n, filename, maxcoor, is_3d 를 정하고 실행하면 해당 디렉토리에 "{filename}.txt" 의 이름으로 랜덤 테이터가 생긴다.
 
 
->input 데이터 형식: 
-
+>input 데이터 형식:  
+(is_3d = False)
 ```    
 n  
 x1 y1  
@@ -42,13 +42,31 @@ x3 y3
 ...  
 xn yn
 ```
+> (is_3d = True)
+```    
+n  
+x1 y1 z1  
+x2 y2 z2  
+x3 y3 z3  
+...  
+xn yn zn  
+```
 
+### Clustering
 
-#### [Affinity Propagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}_output.txt" 가 생긴다.  
+#### [Affinity Propagation code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/AffinityPropagation_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}_output.txt" 가 생성된다.
 
+>출력 데이터 형식:  
+```    
+e1 e2 e3 ... en
+```
+(e _i_ = index of exemplar of _i_-th point)
+### Visualization
 
-#### [Visualization code](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}.png" 가 생긴다.
-
+#### is_3d = False 인 경우
+[Visualization code(2D)](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}.png" 가 생성된다.
+#### is_3d = True 인 경우
+[Visualization code(3D)](https://github.com/rne-sshs/Affinity-Propagation/blob/main/src/python/VisualAffinityPropagation3D_andy.py) 를 같은 디렉토리에서 실행하면 "{filename}.png" 가 생성된다.
  - - -
 
 ## Results (visualized with matplotlib)
@@ -59,7 +77,7 @@ xn yn
 ![ap_test4](https://user-images.githubusercontent.com/89206053/170420856-b8dab248-9d7c-4ac3-8356-f416f82c19c0.png)
 
 - - -
-### 3D Results  
+### Results(3D)  
 ![ap_3d_test1](https://user-images.githubusercontent.com/89206053/170478790-81ce0a07-73b3-4fac-9d15-d08cc15be26d.png)  
 
 
