@@ -1,39 +1,61 @@
 import math,statistics
-#affinity propagation practice code
+#affinity propagation code
 #by andyandy
 
-
-
+#decay factor lambda
 lmda = 0.5
 
-#region input
-input_filename = "test1"
-coordinates = open(input_filename + ".txt",'r')
-coor = []
-lines = coordinates.readlines()
-coordinates.close()
-for line in lines:
-    coor.append(tuple(map(float,line.split())))
-n=coor.pop(0)[0]
-n=int(n+.5)
-#endregion
+
+#select s_input or coor_input
+coor_input=True
+
+
+if coor_input:
+    #region input
+    input_filename = "ap_3d_test4"
+    coordinates = open(input_filename + ".txt",'r')
+    coor = []   
+    lines = coordinates.readlines()
+    coordinates.close()
+    for line in lines:
+        coor.append(tuple(map(float,line.split())))
+    n=coor.pop(0)[0]
+    n=int(n+.5)
+    #endregion
+
+    if len(coor[0])==3:
+        is_3d=True
+    elif len(coor[0])==2:
+        is_3d=False
+    else:
+        raise IndexError("Input File Invalid(Length of lines are not 2 or 3)")
+    def simil(i,j): # may be changed
+        return -math.sqrt((coor[i][0]-coor[j][0])**2+(coor[i][1]-coor[j][1])**2 + (0 if not is_3d else (coor[i][2]-coor[j][2])**2))
+    s=[[0]*n for i in range(n)]
+    isum=[]
+    #if s(i,j)==s(j,i)
+    lengths = []
+    for i in range(n):
+        for j in range(i):
+            tmp=simil(i,j)
+            s[j][i]=tmp
+            s[i][j]=tmp
+            lengths.append(tmp)
+
+    for i in range(n):
+        s[i][i]=statistics.median(lengths)
+
+else:
+    input_filename = "similarity_matrix_1"
+    file = open(input_filename+".txt",'r')
+    s=[]
+    lines = file.readlines()
+    file.close()
+    for line in lines:
+        s.append(list(map(float,line.split())))
 
 a=[[0]*n for i in range(n)]
 r=[[0]*n for i in range(n)]
-s=[[0]*n for i in range(n)]
-isum=[]
-#if s(i,j)==s(j,i)
-lengths = []
-for i in range(n):
-    for j in range(i):
-        tmp=-math.sqrt((coor[i][0]-coor[j][0])**2+(coor[i][1]-coor[j][1])**2)
-        s[j][i]=tmp
-        s[i][j]=tmp
-        lengths.append(tmp)
-
-for i in range(n):
-    s[i][i]=statistics.median(lengths)
-
 #iter iterations
 iter = 100     
 for it in range(iter):
