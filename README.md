@@ -29,7 +29,7 @@ Affinity-Propagation
 
 ### How to use
 > 필요한 데이터를 넣을 수도 있고, 없다면 랜덤 데이터를 생성할 수도 있다. (2차원 혹은 3차원) 
-#### s 행렬을 넣기 (coor_input=False 인 경우)
+1. s 행렬을 넣기 (coor_input=False 인 경우)
 >input 데이터 형식:  
 ```    
 n  
@@ -38,7 +38,7 @@ s21 s22 s23 ... s2n
 ...  
 sn1 sn2 sn3 ... snn
 ```
-#### 좌표로 넣기 (coor_input=True 인 경우)
+2. 좌표로 넣기 (coor_input=True 인 경우)
 >랜덤 데이터: [Random Data Generator](https://github.com/rne-sshs/Affinity-Propagation/blob/main/test/AP-Generator_andy.py) 를 n, filename, maxcoor, is_3d를 정하고 실행하면 해당 디렉토리에 "{filename}.txt" 의 이름으로 랜덤 테이터가 생긴다.
 >    > n: number of data points  
 filename: name of file  
