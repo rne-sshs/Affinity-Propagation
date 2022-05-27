@@ -53,6 +53,8 @@ else:
     file.close()
     for line in lines:
         s.append(list(map(float,line.split())))
+    n=s.pop(0)[0]
+    n=int(n+.5)
 
 a=[[0]*n for i in range(n)]
 r=[[0]*n for i in range(n)]
